@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <style>
+        .tabs .tab {
+            float: left;
+        }
+
+        .tabs .tab .content {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            width: 100%;
+            height: 50%;
+            top: 30px;
+            border: 1px black solid;
+        }
+
+        .checkboxtab {
+            display: none;
+        }
+
+        .tab label {
+            margin-right: 100px;
+            width: 400px;
+            height: 40px;
+            font-family: sans-serif;
+        }
+
+        .checkboxtab:checked~label {
+            background: blue;
+            border: 1px black solid;
+        }
+
+        .checkboxtab:checked~.content {
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tabs">
+        <div class="tab">
+            <input name="checkbox-tabs-group" type="radio" id="checkbox1" class="checkboxtab" checked>
+            <label for="checkbox1"> Tab 1</label>
+            <div class="content" style="background-color:blanchedalmond;">
+                This is the content of the tab 1
+            </div>
+        </div>
+        <div class="tab">
+            <input name="checkbox-tabs-group" type="radio" id="checkbox2" class="checkboxtab">
+            <label for="checkbox2"> Tab 2</label>
+            <div class="content" style="background-color: rgb(173,150, 161);">
+                This is the content of the tab 2
+            </div>
+        </div>
+        <div class="tab">
+            <input name="checkbox-tabs-group" type="radio" id="checkbox3" class="checkboxtab">
+            <label for="checkbox3"> Tab 3</label>
+            <div class="content" style="background-color: rgb(212,166, 91);">
+                This is the content of the tab 3
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

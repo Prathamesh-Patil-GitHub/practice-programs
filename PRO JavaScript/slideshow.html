@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Slideshow</title>
+</head>
+<style>
+    .container img{
+        width: 400px;
+        height: 200;
+    }
+</style>
+<body>
+    <div class="container">
+        <img alt="This is a wallpaper" id="image" src="wallpaper 4.jpg">
+    </div>
+</body>
+<script>
+    var i=0;
+    var image=document.getElementById("image");
+    var images=["wallpaper 1.jpg","wallpaper 2.jpg","wallpaper 3.jpg","wallpaper 4.jpg"];
+    var id=window.setInterval(change_image,3000);
+    function change_image(){
+        image.src=images[i];
+        if(i<images.length-1)
+            i++;
+        else
+            i=0;
+    }
+</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Change Para Background Color</title>
+</head>
+<body>
+    <center id="p1">Government Polytechnic Jalgaon</center><br> 
+    <center id="p2">Department of Computer Engineering</center><br>
+    <center><input type="button" value="Change the paragraph Background Color" onclick="change()"></center> 
+</body>
+<script>
+    function change(){
+        var p1=document.getElementById("p1");
+        var p2=document.getElementById("p2");
+        p1.style.backgroundColor="Red";
+        p1.style.padding="20px"
+        p2.style.backgroundColor="Green";
+        p2.style.padding="20px"
+    }
+</script>
+</html>

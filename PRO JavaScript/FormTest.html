@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Test</title>
+</head>
+
+<body>
+    <form action="/server_side_script" id="f1" method="GET" name="Form">
+        <input type="text">
+        <input type="button" value="Print Form Detail" onclick="formDetails()">
+        <input type="submit">
+    </form>
+</body>
+
+<script>
+    function formDetails() {
+        var form = document.getElementById("f1");
+        document.write("<br>Form Name: " + form.name);
+        document.write("<br>Form Elements count: " + form.length);
+        document.write("<br>Form action: " + form.action);
+        document.write("<br>Form Method: " + form.method);
+    }
+</script>
+
+</html>

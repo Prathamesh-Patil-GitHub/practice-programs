@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Billing Page</title>
+</head>
+<style>
+    td{
+        padding: 5px 20px;
+    }
+    #calbtn{
+        padding: 5px 50px;
+    }
+</style>
+<body>
+    <table>
+        <tr><td colspan="4"><center><b>Book Shop</b></center></td></tr>
+        <tr>
+            <td>Item Name</td>
+            <td>Rate</td>
+            <td>Quantity</td>
+            <td>Amount</td>
+        </tr>
+        <tr>
+            <td>Pen</td>
+            <td><input type="text" size="5" name="rates" value="5" readonly></td>
+            <td><input type="text" size="5" name="quantities" value="0" onkeyup="quantityChanged()"></td>
+            <td><input type="text" size="5" name="amounts"  readonly></td>
+        </tr>
+        <tr>
+            <td>Pencil</td>
+            <td><input type="text" size="5" name="rates" value="2" readonly></td>
+            <td><input type="text" size="5" name="quantities" value="0" onkeyup="quantityChanged()"></td>
+            <td><input type="text" size="5" name="amounts" readonly></td>
+        </tr>
+        <tr>
+            <td>Notebook</td>
+            <td><input type="text" size="5" name="rates" value="50" readonly></td>
+            <td><input type="text" size="5" name="quantities" value="0" onkeyup="quantityChanged()"></td>
+            <td><input type="text" size="5" name="amounts" readonly></td>
+        </tr>
+        <tr>
+            <td>Calculator</td>
+            <td><input type="text" size="5" name="rates" value="200" readonly></td>
+            <td><input type="text" size="5" name="quantities" value="0" onkeyup="quantityChanged()"></td>
+            <td><input type="text" size="5" name="amounts" readonly></td>
+        </tr>
+        <tr>
+            <td colspan="4"><center>Total Bill:  <input type="text" size="15" id="total" readonly></center></td>
+        </tr>
+        <tr>
+            <td colspan="4"><center><input type="button" value="Calculate Bill" id="calbtn" onclick="calculate()"></center></td>
+        </tr>
+    </table>
+</body>
+<script>
+    var rates=document.getElementsByName("rates");
+    var quantities=document.getElementsByName("quantities");
+    var amounts=document.getElementsByName("amounts");
+    function quantityChanged(){
+        for(var i=0;i<rates.length;i++)
+            amounts[i].value=(parseFloat(rates[i].value) * parseFloat(quantities[i].value)).toString();
+    }
+    function calculate(){
+        var total=0;
+        for(var i=0;i<amounts.length;i++)
+            total=total+parseFloat(amounts[i].value);
+        document.getElementById("total").value=total.toString();
+    }
+</script>
+</html>

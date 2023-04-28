@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Input Information</title>
+</head>
+<body>
+    <form action="server_code" onsubmit="return submitted()">
+        First Name: <br>
+        <input type="text" name="firstname" placeholder="Enter your first name here..." ><br><br>
+        Last Name: <br>
+        <input type="text" name="lastname" placeholder="Enter your last name here..."><br><br>
+        Age: <br>
+        <input type="text" name="age" placeholder="Enter your age (Years only)..."><br><br>
+        Date of Birth: <br>
+        <input type="date" name="dob"><br><br>
+        Gender: <br>
+        <input type="radio" name="gender" value="Male">Male<br>
+        <input type="radio" name="gender" value="Female">Female<br><br>
+        Profile Photo:
+        <input type="file" name="profilephoto"><br><br><br>
+        <input type="reset"><br><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+<script>
+    function submitted(){
+        var problem=false; 
+        if(document.getElementsByName("firstname")[0].value=="")
+            problem=true;
+        else if(document.getElementsByName("lastname")[0].value=="")
+            problem=true;
+        else if(document.getElementsByName("age")[0].value=="")
+            problem=true;
+        else if(!(document.getElementsByName("gender")[0].checked || document.getElementsByName("gender")[1].checked) )
+            problem=true;
+
+
+        if(problem){
+            alert("Fill all the fields before submitting !!!");
+            return false;
+        }
+        return true;
+    }
+</script>
+</html>

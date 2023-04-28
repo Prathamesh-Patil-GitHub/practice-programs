@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Remove Items From List</title>
+</head>
+<body>
+    <select id="list">
+        <option value="Red">Red</option>
+        <option value="Green">Green</option>
+        <option value="White">White</option>
+        <option value="Black">Black</option>
+    </select>
+    <input type="button" value="Select and Remove" onclick="remove()">
+</body>
+<script>
+    function remove(){
+        var list=document.getElementById("list");
+        var index=list.options.selectedIndex;
+        list.options[index]=null;
+    }
+</script>
+</html>

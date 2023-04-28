@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Promise Test</title>
+</head>
+
+<body>
+    <h1>This is a promise tutorial</h1>
+    <button onclick="populate()">Populate</button>
+    <div id="container"></div>
+</body>
+<script>
+    function populate() {
+        let myPromise = new Promise(function (myResolve, myReject) {
+            //Created XMLHttpRequest
+            let myRequest = new XMLHttpRequest();
+            //Opened the request
+            myRequest.open("GET", "test.json");
+            //Assigned the function on load event
+            myRequest.onload = function () {
+                if (myRequest.status == 200)
+                    myResolve(JSON.parse(myRequest.response));
+                else
+                    myReject("An Error Occured, Please check your internet connection !");
+            }
+            //Sent the request
+            myRequest.send();
+        });
+        myPromise.then(function (myData) {
+            let container = document.getElementById("container");
+            container.innerHTML = `<p>Name : ${myData.name}</p>
+                            <p>Education : ${myData.education}</p>
+                            <p>Age : ${myData.age}</p>
+                            <p>College : ${myData.college}</p>
+        `;
+        }, function (error) {
+            document.getElementById("container").innerHTML = `<p>${error}</p>`;
+        });
+    }
+</script>
+
+</html>

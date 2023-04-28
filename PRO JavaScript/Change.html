@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Change HTML</title>
+</head>
+<body id="bodytag">
+    This is the body
+    <button onclick="change()">Click here</button>
+</body>
+<script>
+    var count=0;
+    function change(){
+        count++;
+        var bd=document.getElementById("bodytag");
+        bd.innerHTML=`The Button was clicked ${count} times
+        <button onclick=change()>Click here</button>`
+    }
+</script>
+</html>

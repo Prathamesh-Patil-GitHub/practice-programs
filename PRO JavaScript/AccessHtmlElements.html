@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accessing HTML Elements and Creating Progress Bar</title>
+</head>
+
+<body  onkeypress="run()">
+    <input type="button">
+    <input type="button">
+    <input type="button">
+    <input type="button">
+    <input type="button">
+    <input type="button">
+    <input type="button">
+    <input type="button">
+    <input type="button">
+    <input type="button">
+    <input type="button">
+    <input type="button">
+</body>
+<script>
+    function sleep(ms){
+        return new Promise(resolve => setTimeout(resolve,ms));
+    }
+    async function run(){
+        var btns=document.getElementsByTagName("input");
+        while(true){
+            
+            var r= Math.floor(Math.random()*(255));
+            var g= Math.floor(Math.random()*(255));
+            var b= Math.floor(Math.random()*(255));
+            var a= Math.floor(Math.random()*(99));
+
+            for(var i=0;i<btns.length;i++){
+                var clr=`rgba(${r},${g},${b},${a})`;
+                if(i==0 || i==btns.length-1)
+                    btns[i].style.backgroundColor=clr ;
+                else{
+                    btns[i-1].style.backgroundColor=clr ;
+                    btns[i].style.backgroundColor=clr ;
+                    btns[i+1].style.backgroundColor=clr ;
+                }
+                await sleep(100);
+            }
+        }
+    }
+    
+</script>
+</html>

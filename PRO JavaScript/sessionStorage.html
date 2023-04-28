@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Session Storage Demo</title>
+</head>
+<body>
+    <h1>This is a sample page for the demonstration of Session Storage on a browser</h1>
+</body>
+<script>
+//Storing key-value pairs in the session storage of browser
+window.sessionStorage.setItem("Name","Prathamesh");
+window.sessionStorage.setItem("Age","18");
+window.sessionStorage.setItem("Education","Diploma in Computer Engineering");
+
+//Retriving data from the session storage of browser
+console.log(sessionStorage.getItem("Name"));
+console.log(sessionStorage.getItem("Age"));
+console.log(sessionStorage.getItem("Education"));
+
+//Removing particular data from the session storage
+sessionStorage.removeItem("Age");
+console.log(sessionStorage.getItem("Age"), "Will return null because it's deleted");
+
+//Removing all data from the session storage
+// sessionStorage.clear();
+</script>
+</html>

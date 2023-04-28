@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cookie Test</title>
+</head>
+<body>
+    Enter Cookie Name: <input type="text" name="c_name" id="t1"><br><br>
+    Enter Cookie Value: <input type="text" name="c_name" id="t2"><br><br>
+    <input type="button" value="Submit" onclick="addcookie()"><br><br>
+    <input type="button" value="See Cookies" onclick="seecookie()">
+</body>
+<script>
+    function addcookie(){
+        var t1=document.getElementById("t1");
+        var t2=document.getElementById("t2");
+        document.cookie=t1.value+"="+t2.value;
+        window.alert("Cookie is added");
+    }
+    function seecookie(){
+        window.alert("Cookies:\n\n"+document.cookie);
+    }
+</script>
+</html>

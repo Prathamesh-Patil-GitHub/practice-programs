@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add in Select</title>
+</head>
+<body>
+    Add Item:
+    <input type="text" id="t1">
+    <input type="button" value="Add" onclick="addItem()">
+    <br><br>
+    <select name="selection" id="s1"></select>
+</body>
+<script>
+    function addItem(){
+        var text=document.getElementById("t1")
+        var item=text.value;
+        var select=document.getElementById("s1");
+        select.options[select.options.length]=new Option(item);
+        text.value="";
+    }
+</script>
+</html>

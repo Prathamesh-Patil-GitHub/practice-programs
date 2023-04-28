@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roll the Status Bar</title>
+</head>
+<body onload="scrollIn()">
+    <h1 id="h">Going to change</h1>
+</body>
+<script>
+let h=document.getElementById("h");
+let message="This is the sample status bar text";
+let place=0;
+h.innerText=message.substring(0,message.length);
+
+function scrollIn(){
+    window.setInterval("scrollMessage()",100);
+}
+
+function scrollMessage(){
+    h.innerText=message.substring(place,message.length);
+    if(place>=message.length)
+        place=0;
+    else
+        place++;
+}
+</script>
+</html>

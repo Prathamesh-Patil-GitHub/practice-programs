@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculate Sphere Volume</title>
+</head>
+<body>
+    Radius <br>
+    <input type="text" id="radius"><br><br>
+    Volume <br>
+    <input type="text" id="volume" readonly><br>
+    <input type="button" value="Calculate" onclick="calc()">
+</body>
+<script>
+    function calc(){
+        var radius=parseFloat(document.getElementById("radius").value);
+        document.getElementById("volume").value=(4/3)*3.141592*Math.pow(radius,3);
+    }
+</script>
+</html>

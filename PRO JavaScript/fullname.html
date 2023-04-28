@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Get Full-Name</title>
+</head>
+<body>
+    First Name : <input type="text" id="fName" name="name"><br><br>
+    Middle Name: <input type="text" id="mName" name="name"><br><br>
+    Last Name  : <input type="text" id="lName" name="name"><br><br><br>
+    <input type="button" value="Submit" onclick="getFullName()">
+</body>
+<script>
+    function getFullName(){
+        var names=document.getElementsByName("name");
+        var fullName=`${names[0].value} ${names[1].value} ${names[2].value}`;
+        document.write(fullName);
+    }
+</script>
+</html>

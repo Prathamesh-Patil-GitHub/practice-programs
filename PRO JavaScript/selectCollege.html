@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Select College</title>
+</head>
+<body>
+    <select id="colleges">
+        <option value="none">Choose College</option>
+        <option value="GCOEJ">GCOEJ</option>
+        <option value="COEP">COEP</option>
+        <option value="VJTI">VJTI</option>
+        <option value="MITP">MITP</option>
+        <option value="VNIT">VNIT</option>
+    </select>
+    <input type="button" value="Confirm Choice" onclick="confirm()">
+</body>
+<script>
+    function confirm(){
+        var clg=document.getElementById("colleges").value;
+        if(clg=="none"){
+            alert("Try Again in next Round");
+        }
+        else{
+            alert(`Confirm My Choice ${clg}`);
+        }
+    }
+</script>
+</html>

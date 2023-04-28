@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Local Storage Demo</title>
+</head>
+<body>
+    <h1>This is a sample page for the demonstration of Local Storage on a browser</h1>
+</body>
+<script>
+//Storing key-value pairs in the local storage of browser
+window.localStorage.setItem("Name","Prathamesh");
+window.localStorage.setItem("Age","18");
+window.localStorage.setItem("Education","Diploma in Computer Engineering");
+
+//Retriving data from the local storage of browser
+console.log(localStorage.getItem("Name"));
+console.log(localStorage.getItem("Age"));
+console.log(localStorage.getItem("Education"));
+
+//Removing particular data from the local storage
+localStorage.removeItem("Age");
+console.log(localStorage.getItem("Age"), "Will return null because it's deleted");
+
+//Removing all data from the local storage
+localStorage.clear();
+</script>
+</html>

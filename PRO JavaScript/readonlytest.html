@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Read only</title>
+</head>
+<body>
+    <input type="text" value="This is initially editable" id="tf">
+    <input type="button" value="Change the state" onclick="change()">
+</body>
+<script>
+    function change(){
+        var text=document.getElementById("tf");
+        if(text.readOnly){
+            text.readOnly=false;
+            text.value="Now this is editable";
+        }
+        else{
+            text.readOnly=true;
+            text.value="Now this is read only";
+        }
+    }
+</script>
+</html>

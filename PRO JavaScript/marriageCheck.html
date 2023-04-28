@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Gender: <br>
+    <input type="radio" name="gender" value="male">Male
+    <input type="radio" name="gender" value="female">Female <br><br><br>
+    Age: <br>
+    <input type="radio" name="age"  value="below18"> Below 18 Yr. <br>
+    <input type="radio" name="age" value="18to21"> Above 18 Yr. but below 21 Yr. <br>
+    <input type="radio" name="age"  value="above21"> Above 21 <br><br>
+
+    <input type="button" value="Submit" onclick="check()">
+</body>
+<script>
+    function check(){
+        var gender=document.getElementsByName("gender");
+        var age=document.getElementsByName("age");
+        if(gender[0].checked && age[2].checked)
+            alert("Valid Age for Marriage");
+        else if(gender[1].checked && (age[1].checked || age[2].checked))
+            alert("Valid Age for Marriage");
+        else
+            alert("Invalid Age for Marriage");
+    }
+</script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu Test</title>
+    <style>
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            float: left;
+            list-style: none;
+            width: 120px;
+            height: 40px;
+            background:linear-gradient(to top left, rgb(28, 95, 70), rgb(139, 185, 168));
+        }
+        ul li a{
+            position: relative;
+            left: 15px;
+            color:blanchedalmond;
+            line-height: 40px;
+            text-decoration: none;
+        }
+        ul li:hover{
+            background:linear-gradient(to top left,rgb(139, 185, 168), rgb(28, 95, 70) );
+            box-shadow: 5px 5px 50px 5px rgb(87, 168, 87)
+        }
+        ul li ul li{display: none;}
+        ul li:hover ul li{display:block;}
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">Hello 1</a></li>
+        <li><a href="#">Hello 2</a>
+            <ul>
+                <li><a href="#">Hello Sub 1</a>
+                    <li><a href="#">Hello Sub 2</a>
+                        <li><a href="#">Hello Sub 3</a>
+                            <li><a href="#">Hello Sub 4</a>
+            </ul>
+            </li>
+            <li><a href="#">Hello 3</a></li>
+            <li><a href="#">Hello 4</a></li>
+            <li><a href="#">Hello 5</a></li>
+    </ul>
+</body>
+
+</html>

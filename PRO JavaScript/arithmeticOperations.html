@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perform Some Simple Calculations</title>
+</head>
+<style>
+    .btns{
+        padding: 10px;
+        margin: 15px;
+    }
+</style>
+<body>
+    Enter First Number: <input type="text" id="num1"><br><br>
+    Enter Second Number: <input type="text" id="num2"><br><br>
+    Result: <input type="text" id="result" readonly><br><br>
+    <input type="button" value="Addition" name="operations" class="btns" onclick="add()">
+    <input type="button" value="Subtraction" name="operations" class="btns" onclick="sub()">
+    <input type="button" value="Multiplication" name="operations" class="btns" onclick="mul()">
+    <input type="button" value="Division" name="operations" class="btns" onclick="div()">
+</body>
+<script>
+    var num1=document.getElementById("num1");
+    var num2=document.getElementById("num2");
+    var resultNum;
+    function add(){
+        resultNum=parseFloat(num1.value)+parseFloat(num2.value);
+        document.getElementById("result").value=resultNum.toString();
+    }
+    function sub(){
+        resultNum=parseFloat(num1.value)-parseFloat(num2.value);
+        document.getElementById("result").value=resultNum.toString();
+    }
+    function mul(){
+        resultNum=parseFloat(num1.value)*parseFloat(num2.value);
+        document.getElementById("result").value=resultNum.toString();
+    }
+    function div(){
+        resultNum=parseFloat(num1.value)/parseFloat(num2.value);
+        document.getElementById("result").value=resultNum.toString();
+    }
+</script>
+</html>
