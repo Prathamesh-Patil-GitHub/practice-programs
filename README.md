@@ -1,4 +1,4 @@
-# Practice Programs for Learning C, C++, Java, Python, and PHP.
+# 400+ Practice Programs for Learning C, C++, Java, Python, and PHP.
 
 This repository contains a collection of practice programs that I have developed while learning C, C++, Java, Python, and PHP since 2019. The programs cover various aspects of programming, including basic syntax and software development concepts. 
 
