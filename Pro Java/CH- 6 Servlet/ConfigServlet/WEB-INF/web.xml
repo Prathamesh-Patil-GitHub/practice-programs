@@ -1,0 +1,30 @@
+<web-app>
+    <servlet>
+        <servlet-name>Config</servlet-name>
+        <servlet-class>ConfigServlet</servlet-class>
+        <init-param>
+            <param-name>driver</param-name>
+            <param-value>com.mysql.cj.jdbc.Driver</param-value>
+        </init-param>
+        <init-param>
+            <param-name>database</param-name>
+            <param-value>myDatabase</param-value>
+        </init-param>
+        <init-param>
+            <param-name>port</param-name>
+            <param-value>3306</param-value>
+        </init-param>
+        <init-param>
+            <param-name>user</param-name>
+            <param-value>Prathamesh</param-value>
+        </init-param>
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>prathameshPassEntered</param-value>
+        </init-param>
+        </servlet>
+    <servlet-mapping>
+        <servlet-name>Config</servlet-name>
+        <url-pattern>/config</url-pattern>
+    </servlet-mapping>
+</web-app>

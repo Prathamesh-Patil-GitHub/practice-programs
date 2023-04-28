@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Servlet Request Application</title>
+</head>
+<style>
+    .formdiv{
+        display: flex;
+        justify-content:center ;
+    }
+</style>
+<body style="background:cornflowerblue">
+    <h1 style="text-align:center" ><i>INPUT FORM DATA</i></h1><br><br><br>
+    <div class="formdiv">
+        <form action="/ServerRequest/passdata" method="GET">
+            First Name: <input type="text" name="first_name"><br><br>
+            Last Name : <input type="text" name="last_name"><br><br>
+            Gender    : <br> <input type="radio" value="Male" name="gender">Male<br>
+                    <input type="radio" value="Female" name="gender">Female<br><br>
+            Telephone : <input type="tel" name="telephone"><br><br><br>
+            <input type="submit" value=" Send Data ">
+        </form>
+    </div>
+</body>
+</html>

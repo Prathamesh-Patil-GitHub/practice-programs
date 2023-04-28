@@ -1,0 +1,10 @@
+<web-app>
+	<servlet>
+		<servlet-name>ServletTest</servlet-name>
+		<servlet-class>ServletClass</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletTest</servlet-name>
+		<url-pattern>/ServletClass</url-pattern>
+	</servlet-mapping>
+</web-app>

@@ -1,0 +1,11 @@
+<web-app>
+	<servlet>
+		<servlet-name>RequestServlet</servlet-name>
+		<servlet-class>ServletRequestClass</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>RequestServlet</servlet-name>
+		<url-pattern>/passdata</url-pattern>
+	</servlet-mapping>
+</web-app>

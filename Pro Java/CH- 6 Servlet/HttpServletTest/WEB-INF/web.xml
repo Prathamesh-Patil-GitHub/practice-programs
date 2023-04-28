@@ -1,0 +1,10 @@
+<web-app>
+	<servlet>
+		<servlet-name>http</servlet-name>
+		<servlet-class>HttpServletTest</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>http</servlet-name>
+		<url-pattern>/httptest</url-pattern>
+	</servlet-mapping>
+</web-app>

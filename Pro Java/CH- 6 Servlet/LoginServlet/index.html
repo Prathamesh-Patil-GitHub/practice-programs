@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+</head>
+<style>
+    .formdiv{
+        display: flex;
+        justify-content:center ;
+    }
+</style>
+<body style="background:cornflowerblue">
+    <h1 style="text-align:center; color:white" ><i>USER LOGIN</i></h1><br><br><br>
+    <div class="formdiv">
+        <form action="/LoginServlet/login" method="POST">
+            Username : <input type="text" name="username"><br><br>
+            Password : <input type="password" name="password"><br><br>
+        	<input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
