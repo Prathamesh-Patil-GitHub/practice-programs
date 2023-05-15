@@ -17,6 +17,7 @@ The programs in this repository are organized by programming language. The main 
 - **Java:** Contains programs written in Java programming language.
 - **Python:** Contains programs written in Python programming language.
 - **PHP:** Contains programs written in PHP programming language.
+- **Leetcode Solutions:** Contains all leetcode solutions that I've submitted.
 
 Each of these folders contains programs that cover various topics related to the respective programming language.
 
