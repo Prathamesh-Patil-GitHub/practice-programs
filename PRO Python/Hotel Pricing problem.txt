@@ -1,0 +1,17 @@
+A hotel has a pricing policy as follows:
+
+2 people - 2500 rs.
+3 people - 3500 rs.
+4 people - 4500 rs.
+Additional people 1000 rs. per person.
+
+If a customer is staying on company business trip and the company is enrolled with the hotel, there is 20% discount.
+
+If the customer is over 60 years age, there is discount of 15%.
+
+A customer does not receive both discounts.
+
+The basic cost of delux room is 2000 rs. and executive room is 5000 rs.
+The discount is applicable only on the basic cost of the room.
+
+Given the above data print the cost of the room.
