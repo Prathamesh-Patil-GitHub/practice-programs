@@ -17,9 +17,11 @@ def validate(event):
 
     userValid = checkUsername(username)
     passValid = checkPassword(password)
-    
+
     if userValid and passValid:
         messagebox.showinfo("SUCCESS", "Login Successful !")
+    elif len(password) < 6 or len(password) > 12:
+        messagebox.showinfo("ERROR", "Password length should be 6 to 12 characters long !")
     elif not userValid:
         messagebox.showinfo("ERROR", "Enter a valid Email-ID !")
     elif not passValid:
