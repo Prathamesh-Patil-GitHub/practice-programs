@@ -21,9 +21,9 @@ def validate(event):
     if userValid and passValid:
         messagebox.showinfo("SUCCESS", "Login Successful !")
     elif not userValid:
-        messagebox.showinfo("ERROR", "Enter a valid Email - ID !")
+        messagebox.showinfo("ERROR", "Enter a valid Email-ID !")
     elif not passValid:
-        messagebox.showinfo("ERROR", "Password should contain at least 1 lowercase, 1 uppercase, 1 special symbol and 1 digit") 
+        messagebox.showinfo("ERROR", "Password should contain at least 1 lowercase, 1 uppercase, 1 special symbol and 1 digit !") 
 
 master = Tk()
 
