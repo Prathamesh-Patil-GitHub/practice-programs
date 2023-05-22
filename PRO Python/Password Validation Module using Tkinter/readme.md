@@ -11,3 +11,7 @@ OR
 
 - Refer to the following tutorial:
 <a href = "https://www.tutorialspoint.com/how-to-install-tkinter-in-python"> Install Tkinter
+
+## Modules Used:
+- Tkinter : For creating the GUI
+- Re : For Username and Password validation
