@@ -20,7 +20,7 @@ The programs in this repository are organized by programming language. The main 
 - **PRO Data Structures:** Contains Data Structure and Algorithm programs written using C and C++.
 - **PRO Leetcode Solutions:** Contains all leetcode solutions that I've submitted till now.
 
-Each of these folders contains programs that cover various topics related to the respective programming language.
+Each of these folders contains programs that cover various topics related to the respective programming language and concepts.
 
 ## Contributing
 
