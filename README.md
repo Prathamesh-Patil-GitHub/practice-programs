@@ -12,12 +12,13 @@ To get started with this repository, you will need to have a basic understanding
 
 The programs in this repository are organized by programming language. The main folders are:
 
-- **C:** Contains programs written in C programming language. 
-- **C++:** Contains programs written in C++ programming language.
-- **Java:** Contains programs written in Java programming language.
-- **Python:** Contains programs written in Python programming language.
-- **PHP:** Contains programs written in PHP programming language.
-- **Leetcode Solutions:** Contains all leetcode solutions that I've submitted till now.
+- **PRO C:** Contains programs written in C programming language. 
+- **PRO C++:** Contains programs written in C++ programming language.
+- **PRO Java:** Contains programs written in Java programming language.
+- **PRO Python:** Contains programs written in Python programming language.
+- **PRO PHP:** Contains programs written in PHP programming language.
+- **PRO Data Structures:** Contains Data Structure and Algorithm programs written using C and C++.
+- **PRO Leetcode Solutions:** Contains all leetcode solutions that I've submitted till now.
 
 Each of these folders contains programs that cover various topics related to the respective programming language.
 
