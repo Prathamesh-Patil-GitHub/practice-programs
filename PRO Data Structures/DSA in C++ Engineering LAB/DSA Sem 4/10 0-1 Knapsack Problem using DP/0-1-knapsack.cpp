@@ -6,7 +6,7 @@
 using namespace std;
 
 int main(){
-  // Initializations
+  	// Initializations
 	vector<int> cost = {10, 3, 4, 6, 5, 2};
 	vector<int> profit = {27, 35, 21, 28, 29, 5};
 	int capacity = 8;
@@ -14,7 +14,7 @@ int main(){
 	int m = capacity;
 	vector<vector<int>> dp;
   
-  // Creating the DP Matrix
+  	// Creating the DP Matrix
 	for(int i=0; i<=n; i++){
 		vector<int> temp(capacity+1, 0);
 		dp.push_back(temp);
@@ -30,7 +30,7 @@ int main(){
 		}
 	}
   
-  // Printing the DP Matrix
+  	// Printing the DP Matrix
 	cout<<"DP Matrix: "<<endl;
 	for(int i=0;i<=n;i++){
 		for(int j=0;j<=m;j++){
@@ -39,9 +39,9 @@ int main(){
 		cout<<endl;
 	}
   
-  cout<<endl;
+  	cout<<endl;
   
-  // Finding the selected elements that have been put into the knapsack
+  	// Finding the selected elements that have been put into the knapsack
 	vector<pair<int,int>> knapsack;
   	int i=n, j=m;
 	while(i>=1 && j>=1){
@@ -55,7 +55,7 @@ int main(){
 		}
 	}
   
-  // Printing the knapsack
+  	// Printing the knapsack
 	cout<<"Knapsack is: "<<endl;
 	for(pair<int,int> element: knapsack){
 		cout<<element.first<<" "<<element.second<<endl;
