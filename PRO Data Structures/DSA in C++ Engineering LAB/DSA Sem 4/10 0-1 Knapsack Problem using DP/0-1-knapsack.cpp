@@ -38,7 +38,6 @@ int main(){
 		}	
 		cout<<endl;
 	}
-  
   	cout<<endl;
   
   	// Finding the selected elements that have been put into the knapsack
