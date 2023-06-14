@@ -1,5 +1,5 @@
 /// Author : Prathamesh Patil
-/// Problem: Apply Bellman - Ford algorithm to find the shortes path from the starting vertex to all other vertices
+/// Problem: Apply Bellman - Ford algorithm to find the shortest path from the starting vertex to all other vertices
 /// Note: The graph may include negative weights over the edges
 #include <iostream>
 #include <vector>
