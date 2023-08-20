@@ -18,6 +18,7 @@ The programs in this repository are organized by programming language. The main 
 - **PRO Python:** Contains programs written in Python programming language.
 - **PRO PHP:** Contains programs written in PHP programming language.
 - **PRO Data Structures:** Contains Data Structure and Algorithm programs written using C and C++.
+- **PRO Design Pattern:** Contains Behavioral, Creational and Structural Design Pattern Implementations using Java programming language.
 - **PRO Leetcode Solutions:** Contains all leetcode solutions that I've submitted till now.
 
 Each of these folders contains programs that cover various topics related to the respective programming language and concepts.
