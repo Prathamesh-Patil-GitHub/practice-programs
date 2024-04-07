@@ -1,4 +1,4 @@
-# 550+ Practice Programs for Learning C, C++, Java, Python, Go, PHP and Leetcode Solutions.
+# 600+ Practice Programs for Learning C, C++, Java, Python, Go, JavaScript, PHP and Leetcode Solutions.
 
 This repository contains a collection of practice programs that I have developed while learning C, C++, Java, Python, Go and PHP since 2019. The programs cover various aspects of programming, including basic syntax and software development concepts. 
 
@@ -15,8 +15,9 @@ The programs in this repository are organized by programming language. The main 
 - **PRO C:** Contains programs written in C programming language. 
 - **PRO C++:** Contains programs written in C++ programming language.
 - **PRO Java:** Contains programs written in Java programming language.
-- **PRO Go:** Contains programs written in Go programming language.
 - **PRO Python:** Contains programs written in Python programming language.
+- **PRO Go:** Contains programs written in Go programming language.
+- **PRO JavaScript:** Contains programs written in JavaScript programming scripting language.
 - **PRO PHP:** Contains programs written in PHP programming language.
 - **PRO Data Structures:** Contains Data Structure and Algorithm programs written using C and C++.
 - **PRO Design Pattern:** Contains Behavioral, Creational and Structural Design Pattern Implementations using Java programming language.
